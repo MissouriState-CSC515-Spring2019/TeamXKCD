@@ -1,10 +1,15 @@
-# XkcdProject515
+# Overview
+
+We will create a single page application that will allow the user to see the current XKCD comic strip, see previous XKCD comic strips and to create permanent links to their favorite comic strip.
+
+## XkcdProject515
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+`ng serve --open` or `ng serve -o` automatically opens the app to the default browser.
 
 ## Code scaffolding
 
