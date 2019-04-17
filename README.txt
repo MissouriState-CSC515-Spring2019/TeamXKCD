@@ -1,1 +1,0 @@
-We will create a single page application that will allow the user to see the current XKCD comic strip, see previous XKCD comic strips and to create permanent links to their favorite comic strip.
