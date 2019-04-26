@@ -2,6 +2,7 @@ import { Injectable } from "@angular/core";
 import { Observable, throwError } from "rxjs";
 import {HttpClient, HttpErrorResponse } from "@angular/common/http";
 import { catchError, map } from "rxjs/operators";
+import { comicData } from './comicData'
 
 @Injectable({
   providedIn: 'root',
@@ -15,8 +16,8 @@ export class RipJSONService {
   constructor(private http: HttpClient ) { }
 
   
-  getData(){
-        return this.http.get(this.urlbase + this.urlend); //https://github.com/mrmartineau/xkcd-api
+  getData(): Observable<comicData[]>{
+        return this.http.get<comicData[]>(this.urlbase + this.urlend); //https://github.com/mrmartineau/xkcd-api
   }
   
   geturlType(){ //to add ability to go with eith recent api or specific comic api once urlscheme and routing is more set in stone
