@@ -5,7 +5,7 @@ import { RipJSONComponent } from './rip-json.component';
 describe('RipJSONComponent', () => {
   let component: RipJSONComponent;
   let fixture: ComponentFixture<RipJSONComponent>;
-
+  
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ RipJSONComponent ]

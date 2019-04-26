@@ -1,24 +1,26 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
+import { Observable, throwError } from "rxjs";
+import {HttpClient, HttpErrorResponse} from "@angular/common/http";
+import { catchError, map } from "rxjs/operators";
 
-import { Http } from "@angular/http";
-import 'rxjs/add/operator/map';
-import { Observable } from "rxjs/Observable";
-
-@Injectable()
+@Injectable({
+  providedIn: 'root', //not sure
+})
 export class RipJSONService {
-    
+
+
   urlbase: string = "https://xkcd.com/";
   urlend: string = "info.0.json";
   
   whichAPI: boolean;
     
-  constructor(private _http: Http) { }
+  constructor(/* private http: HttpClient */) { } //remove block comment later
   
   getData(){
-        return this._http.get(this.url + )
+        return //this.http.get(this.urlbase + + this.urlend).map(res => res.json()); //TODO finish url swap
   }
   
   geturl(){
-  
+    return 
   }
 }

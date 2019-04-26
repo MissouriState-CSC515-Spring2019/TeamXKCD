@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ripJSON } from '../rip-json';
+import { xkcdData } from '../xkcdData';
+import { RipJSONService } from '../rip-json.service';
 
 @Component({
   selector: 'app-rip-json',
@@ -8,22 +9,30 @@ import { ripJSON } from '../rip-json';
 })
 export class RipJSONComponent implements OnInit {
 
-public comic: any =[];
+  constructor(private api: RipJSONService) {}
 
-
-
-data: ripJSON = {
-    id: 0,
-    name: selectedcomic,
-    
-};
-
-
-
-
-  constructor() { }
+  data: xkcdData = {
+    month: "2",
+    comicnum: 9999,
+    link: "url",
+    year: "1972",
+    news: "",
+    safe_title: "string",
+    transcript: "string",
+    altText: "hello, this is altText",
+    comicIMG: "comicURLHERE",
+    title: "testTIME",
+    day: "32"
+  };
 
   ngOnInit() {
+    //this.api
+      //.getData//TODO
+  }
+
+  getData(): void{
+    //this.api.getData()
+      //.subscribe(data => this.data = data);
   }
 
 }
