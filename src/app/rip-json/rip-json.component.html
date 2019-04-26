@@ -2,6 +2,14 @@
   rip-json works!
 </p>
 
-<h2>{{data.title}} Details</h2>
-<div><span>num: </span>{{data.comicnum}}</div>
-<div><span>alt: </span>{{data.altText}}</div>
+<h2>{{testdata.title}} Details</h2>
+<div><span>num: </span>{{testdata.comicnum}}</div>
+<div><span>alt: </span>{{testdata.altText}}</div>
+
+<h2>{{rawData}}</h2>
+<h2>{{rawData.num}}</h2>
+<h2>{{rawData.link}}</h2>
+<h2>{{rawData.title}}</h2>
+<h2>{{rawData.img}}</h2>
+<h2>{{rawData.imgRetina}}</h2> 
+<!--if imgRetina does not exist from api (only exists on more recent comics) this seems to just not display-->

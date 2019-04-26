@@ -8,10 +8,11 @@ import { RipJSONService } from '../rip-json.service';
   styleUrls: ['./rip-json.component.css']
 })
 export class RipJSONComponent implements OnInit {
+  xkcddata: xkcdData;
+  public rawData = [];
+  constructor(private apiService: RipJSONService) {}
 
-  constructor(private api: RipJSONService) {}
-
-  data: xkcdData = {
+  testdata: xkcdData = {
     month: "2",
     comicnum: 9999,
     link: "url",
@@ -25,14 +26,23 @@ export class RipJSONComponent implements OnInit {
     day: "32"
   };
 
+
+
   ngOnInit() {
-    //this.api
+    //this.apiService
       //.getData//TODO
+
+    //this.getData();
+    this.apiService.getData()
+      .subscribe(data => this.rawData = data);
   }
 
   getData(): void{
-    //this.api.getData()
-      //.subscribe(data => this.data = data);
+    //this.apiService.getData()
+      //.subscribe((data => this.data = {
+
+      //});
+    
   }
 
 }
