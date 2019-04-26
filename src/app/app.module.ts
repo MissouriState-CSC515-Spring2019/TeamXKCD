@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RipJSONComponent } from './rip-json/rip-json.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RipJSONComponent
   ],
   imports: [
     BrowserModule,
