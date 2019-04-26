@@ -1,0 +1,8 @@
+<h2>My Comics</h2>
+<ul class="comics">
+  <li *ngFor="let comic of comics">
+    <a routerLink="/detail/{{comic.id}}">
+      <span class="badge">{{comic.id}}</span> {{comic.name}}
+    </a>
+  </li>
+</ul>
