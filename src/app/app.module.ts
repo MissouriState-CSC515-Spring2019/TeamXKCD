@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { RipJSONComponent } from './rip-json/rip-json.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { XkcdDetailComponent } from './xkcd-detail/xkcd-detail.component';
 import { XkcdComponent } from './xkcd/xkcd.component';
@@ -13,6 +15,7 @@ import { AboutTheAuthorComponent } from './about-the-author/about-the-author.com
 @NgModule({
   declarations: [
     AppComponent,
+    RipJSONComponent,
     XkcdComponent,
     XkcdDetailComponent,
     DashboardComponent,
@@ -20,8 +23,9 @@ import { AboutTheAuthorComponent } from './about-the-author/about-the-author.com
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
-    AppRoutingModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

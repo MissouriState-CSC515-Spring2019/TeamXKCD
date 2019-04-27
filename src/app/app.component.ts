@@ -11,5 +11,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'xkcd-project515';
+  basetitle = 'xkcd-project515';
 }
