@@ -27,10 +27,3 @@ nav a:hover {
 nav a.active {
   color: #039be5;
 }
-
-#comic_strip{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-}
