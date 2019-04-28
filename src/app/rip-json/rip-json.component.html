@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <p>rip-json component loaded(remove this element later)</p>
 
 <h2>Month: {{rawData.month}}</h2>
@@ -5,10 +6,15 @@
 <h2>Link(if provided): {{rawData.link}}</h2>
 <h2>Year: {{rawData.year}}</h2>
 <h2>News(if provided): {{rawData.news}}</h2>
-<h2>Safe title: {{rawData.safe_title}}</h2>
+
 <h2>Transcript(if provided): {{rawData.transcript}}</h2>
 <h2>Alt text: {{rawData.alt}}</h2>
-<img src={{rawData.img}}>
+<div class="title">
+	{{rawData.safe_title}}
+</div>
+<div id="comic_strip">
+	<img src={{rawData.img}}>
+</div>
 <h2>Title: {{rawData.title}}</h2>
 <h2>Day: {{rawData.day}}</h2>
 <h2>Link to retinaimg(if provided): {{rawData.imgRetina}}</h2> 

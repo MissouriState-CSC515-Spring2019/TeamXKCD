@@ -1,0 +1,12 @@
+#comic_strip{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+.title{
+	font-size: 36px;
+	text-align: center;
+	width: 95%;
+	padding: 10px;
+  }
