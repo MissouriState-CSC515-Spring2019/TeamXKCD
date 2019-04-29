@@ -1,5 +1,10 @@
+<!DOCTYPE html>
 <h2>My Comics</h2>
+<div>
+    <h2>Comic number: {{rawData.num}}</h2>
+</div>
 <ul class="comics">
+  <li></li>
   <li *ngFor="let comic of comics">
     <a routerLink="/detail/{{comic.id}}">
       <span class="badge">{{comic.id}}</span> {{comic.name}}
