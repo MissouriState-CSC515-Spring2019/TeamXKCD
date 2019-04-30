@@ -61,6 +61,7 @@ h4 {
     min-width: 60px;
   }
 } */
+
 #title {
   text-align: center;
 }
@@ -70,4 +71,9 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+div {
+  text-align: center;
+  margin-top: 20px;
 }
