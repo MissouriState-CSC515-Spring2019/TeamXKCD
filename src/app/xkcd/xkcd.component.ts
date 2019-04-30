@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-import { Comic } from '../xkcd';
-import { ComicService } from '../comic.service';
+import { RipJSONService } from '../rip-json.service';
 
 @Component({
   selector: 'app-xkcd',
@@ -9,17 +7,11 @@ import { ComicService } from '../comic.service';
   styleUrls: ['./xkcd.component.css']
 })
 export class XkcdComponent implements OnInit {
-  
-  comics: Comic[];
-
-  constructor(private comicService: ComicService) { }
+  public rawData = [];
+  constructor(private apiService: RipJSONService) {}
 
   ngOnInit() {
-    this.getComics();
+    this.apiService.getData()
+      .subscribe(data => this.rawData = data);
   }
-
-  getComics(): void {
-    this.comicService.getComics()
-      .subscribe(comics => this.comics = comics);  }
-
 }
