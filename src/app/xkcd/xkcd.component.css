@@ -1,5 +1,8 @@
 /* XkcdComponent's private CSS styles */
-.selected {
+h2 {
+  text-align: center;
+}
+/* .selected {
     background-color: #CFD8DC !important;
     color: white;
   }
@@ -45,4 +48,4 @@
     height: 1.8em;
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
-  }
+  } */

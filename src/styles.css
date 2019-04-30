@@ -10,6 +10,7 @@ h1 {
     font-weight: lighter;
   }
   body {
+    background-color: yellow;
     margin: 2em;
   }
   body, input[type="text"], button {

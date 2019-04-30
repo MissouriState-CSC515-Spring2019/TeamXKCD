@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<h2>My Comics</h2>
+<h2>Month: {{rawData.month}}</h2>
+<h2>Comic number: {{rawData.num}}</h2>
+<h2>Link(if provided): {{rawData.link}}</h2>
+<h2>Year: {{rawData.year}}</h2>
+<h2>News(if provided): {{rawData.news}}</h2>
+<!-- <h2>My Comics</h2>
 <div>
     <h2>Comic number: {{rawData.num}}</h2>
-</div>
+</div> -->
 <!-- <ul class="comics">
   <li></li>
   <li *ngFor="let comic of comics">
@@ -11,9 +16,9 @@
     </a>
   </li>
 </ul> -->
-<div>
+<!-- <div>
   <img src={{rawData.img}}>
-</div>
+</div> -->
 <!-- Don't call the component within the component -->
 <!-- <app-xkcd></app-xkcd>  -->
 <!--  -->

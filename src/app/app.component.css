@@ -1,7 +1,5 @@
 /* AppComponent's private CSS styles */
-body {
-  background-color: black;
-}
+
 h1 {
   font-size: 1.2em;
   color: #999;
@@ -20,10 +18,11 @@ nav a {
   align-content: center;
   padding: 5px 10px;
   text-decoration: none;
-  margin-top: 10px;
+  margin: 10px;
   display: inline-block;
   background-color: #eee;
-  border-radius: 20px;
+  outline-color: black;
+  outline-style: double
 }
 nav a:visited, a:link {
   color: #607d8b;
