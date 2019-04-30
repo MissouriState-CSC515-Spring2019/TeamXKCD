@@ -3,15 +3,17 @@
 <div>
     <h2>Comic number: {{rawData.num}}</h2>
 </div>
-<ul class="comics">
+<!-- <ul class="comics">
   <li></li>
   <li *ngFor="let comic of comics">
     <a routerLink="/detail/{{comic.id}}">
       <span class="badge">{{comic.id}}</span> {{comic.name}}
     </a>
   </li>
-</ul>
+</ul> -->
 <div>
   <img src={{rawData.img}}>
 </div>
-<app-xkcd></app-xkcd> 
+<!-- Don't call the component within the component -->
+<!-- <app-xkcd></app-xkcd>  -->
+<!--  -->
