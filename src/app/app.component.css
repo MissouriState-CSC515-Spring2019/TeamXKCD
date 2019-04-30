@@ -9,7 +9,12 @@ h2 {
   margin-top: 0;
   padding-top: 0;
 }
+div {
+  text-align: center;
+  width: 100%;
+}
 nav a {
+  align-content: center;
   padding: 5px 10px;
   text-decoration: none;
   margin-top: 10px;
