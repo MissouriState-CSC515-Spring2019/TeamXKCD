@@ -1,4 +1,4 @@
-<h3>Top Comics</h3>
+<!-- <h3>Top Comics</h3>
 <div class="grid grid-pad">
   <a *ngFor="let comic of comics" class="col-1-4"
       routerLink="/detail/{{comic.id}}">
@@ -6,4 +6,12 @@
       <h4>{{comic.name}}</h4>
     </div>
   </a>
+</div> -->
+<!-- <div>  Comic number: {{rawData.num}}</div> -->
+<h2 id="title">{{rawData.title}}</h2>
+<img src={{rawData.img}}>
+<div>
+  <input id="prev" type="submit" value="<< prev">
+  <input id="today" type="submit" value="Comic number: {{rawData.num}}">
+  <input id="next" type="submit" value="next >>">
 </div>
