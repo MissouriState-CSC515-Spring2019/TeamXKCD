@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <h2>Month: {{rawData.month}}</h2>
 <h2>Comic number: {{rawData.num}}</h2>
-<h2>Link(if provided): {{rawData.link}}</h2>
+<!-- Added this as the link - more simple than trying to call the link, I think - (Stephen) -->
+<h2>Link(if provided):https://xkcd.com/{{rawData.num}}</h2>
 <h2>Year: {{rawData.year}}</h2>
 <h2>News(if provided): {{rawData.news}}</h2>
 <!-- <h2>My Comics</h2>
+  {{rawData.link}}
 <div>
     <h2>Comic number: {{rawData.num}}</h2>
 </div> -->
