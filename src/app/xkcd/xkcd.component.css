@@ -2,6 +2,17 @@
 h2 {
   text-align: center;
 }
+#comic_info{
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  position: absolute;
+  display: block;
+  top: 25%;
+  left: 20%;
+  width: 60%;
+  height: 25%;
+}
 /* .selected {
     background-color: #CFD8DC !important;
     color: white;
