@@ -11,7 +11,11 @@
 <h2 id="title">{{rawData.title}}</h2>
 <img src={{rawData.img}}>
 <div>
-  <input id="prev" type="submit" value="<< prev">
-  <!-- <input id="today" type="submit" value="Comic number: {{rawData.num}}"> -->
-  <input id="next" type="submit" value="next >>">
+
+  <!-- <button id="prev" (click)="rawData.num=rawData.num-1"><< prev</button> -->
+  <button id="prev" (click)="prevComic(rawData.num)"><< prev</button>
+  <a routerLink="/info/{{rawData.num}}">Comic #{{rawData.num}}: info</a>
+  <!-- <button id="next" (click)="rawData.num=rawData.num+1">next >></button> -->
+  <button id="next" (click)="nextComic(rawData.num)">next >></button>
+
 </div>

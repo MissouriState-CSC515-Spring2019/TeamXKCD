@@ -11,7 +11,7 @@ export class XkcdComponent implements OnInit {
   constructor(private apiService: RipJSONService) {}
 
   ngOnInit() {
-    this.apiService.getData()
-      .subscribe(data => this.rawData = data);
+    // this.apiService.getData()
+    //   .subscribe(data => this.rawData = data);
   }
 }

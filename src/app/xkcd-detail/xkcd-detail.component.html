@@ -1,12 +1,7 @@
-<div *ngIf="comic">
-
-  <h2>{{comic.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{comic.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="comic.name" placeholder="name"/>
-    </label>
-  </div>
-  <button (click)="goBack()">go back</button>
-
+<!DOCTYPE html>
+<h2>Comic Information</h2>
+<div id = "comic_info">
+  <h2>Date Published - {{rawData.month}}/{{rawData.day}}/{{rawData.year}}</h2>
+  <h2>Comic number - {{rawData.num}}</h2>
+  <h2>Permanent Link - https://xkcd.com/{{rawData.num}}</h2>
 </div>
