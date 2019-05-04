@@ -30,6 +30,20 @@ export class XkcdDetailComponent implements OnInit {
       .subscribe(data => this.rawData = data);
 
     history.pushState({}, null, `/info/${id}`);
-      }
+    }
+
+    prevComic(comicNum): void {
+      comicNum = (comicNum-1).toString();
+      this.apiService.getData(comicNum)
+        .subscribe(data => this.rawData = data);
+      history.pushState({}, null, `/info/${comicNum}`);
+    }
+  
+    nextComic(comicNum): void {
+      comicNum = (comicNum+1).toString();
+      this.apiService.getData(comicNum)
+        .subscribe(data => this.rawData = data);
+      history.pushState({}, null, `/info/${comicNum}`);
+    }
 
 }
