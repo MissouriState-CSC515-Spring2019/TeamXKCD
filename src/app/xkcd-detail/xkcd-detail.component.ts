@@ -1,36 +1,49 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Location } from '@angular/common';
-
-import { Comic } from '../xkcd';
-import { ComicService }  from '../comic.service';
+import { RipJSONService } from '../rip-json.service';
 
 @Component({
   selector: 'app-xkcd-detail',
   templateUrl: './xkcd-detail.component.html',
   styleUrls: ['./xkcd-detail.component.css']
 })
+
 export class XkcdDetailComponent implements OnInit {
-  comic: Comic;
-  
+
+  public rawData = [];
   constructor(
     private route: ActivatedRoute,
-    private comicService: ComicService,
-    private location: Location
-  ) { }
+    private apiService: RipJSONService
+  ) {}
 
   ngOnInit(): void {
     this.getComic();
   }
-  
-  getComic(): void {
-    const id = +this.route.snapshot.paramMap.get('id');
-    this.comicService.getComic(id)
-      .subscribe(comic => this.comic = comic);
-  }
 
-  goBack(): void {
-    this.location.back();
-  }
+  getComic(): void {
+    let id = '',
+        route = location.pathname.split('/');
+    if (route[1] === 'info' && route.length == 3) {
+      id = route[2];
+    } 
+    this.apiService.getData(id)
+      .subscribe(data => this.rawData = data);
+
+    history.pushState({}, null, `/info/${id}`);
+    }
+
+    prevComic(comicNum): void {
+      comicNum = (comicNum-1).toString();
+      this.apiService.getData(comicNum)
+        .subscribe(data => this.rawData = data);
+      history.pushState({}, null, `/info/${comicNum}`);
+    }
+  
+    nextComic(comicNum): void {
+      comicNum = (comicNum+1).toString();
+      this.apiService.getData(comicNum)
+        .subscribe(data => this.rawData = data);
+      history.pushState({}, null, `/info/${comicNum}`);
+    }
 
 }
