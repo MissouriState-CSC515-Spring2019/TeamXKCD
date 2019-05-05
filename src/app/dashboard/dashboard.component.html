@@ -1,21 +1,9 @@
-<!-- <h3>Top Comics</h3>
-<div class="grid grid-pad">
-  <a *ngFor="let comic of comics" class="col-1-4"
-      routerLink="/detail/{{comic.id}}">
-    <div class="module comic">
-      <h4>{{comic.name}}</h4>
-    </div>
-  </a>
-</div> -->
-<!-- <div>  Comic number: {{rawData.num}}</div> -->
 <h2 id="title">{{rawData.title}}</h2>
-<img src={{rawData.img}}>
 <div>
-
-  <!-- <button id="prev" (click)="rawData.num=rawData.num-1"><< prev</button> -->
-  <button id="prev" (click)="prevComic(rawData.num)"><< prev</button>
+  <img id="prev" (click)="prevComic(rawData.num)" alt="prev" src="../assets/prev-arrow.png">
+  <img id="comic" src={{rawData.img}}>
+  <img id="next" (click)="nextComic(rawData.num)" alt="next" src="../assets/next-arrow.png">
+</div>
+<div>
   <a routerLink="/info/{{rawData.num}}">Comic #{{rawData.num}}: info</a>
-  <!-- <button id="next" (click)="rawData.num=rawData.num+1">next >></button> -->
-  <button id="next" (click)="nextComic(rawData.num)">next >></button>
-
 </div>

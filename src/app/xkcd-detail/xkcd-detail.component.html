@@ -6,9 +6,5 @@
   <h2>Permanent Link - https://xkcd.com/{{rawData.num}}</h2>
 </div>
 <div>
-
-  <button id="prev" (click)="prevComic(rawData.num)"><< prev</button>
   <a routerLink="/comic/{{rawData.num}}">Comic #{{rawData.num}}: image</a>
-  <button id="next" (click)="nextComic(rawData.num)">next >></button>
-
 </div>
