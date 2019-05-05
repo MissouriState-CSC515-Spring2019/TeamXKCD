@@ -32,11 +32,11 @@ div {
 }
 
 #prev:hover {
-  background-color: green;
+  filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
 }
 
 #next:hover {
-  background-color: green;
+  filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(100%);
 }
 
 a {
