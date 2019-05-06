@@ -22,11 +22,13 @@ div {
 }
 
 #prev {
+  vertical-align: 200%;
   max-height: 500px; 
   max-width: 10%;
 }
 
 #next {
+  vertical-align: 200%;
   max-height: 500px; 
   max-width: 10%;
 }
@@ -45,4 +47,15 @@ a {
 
 a:hover {
   color: red;
+}
+
+#about_comic{
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  width: 120px;
+ 
+
+
 }

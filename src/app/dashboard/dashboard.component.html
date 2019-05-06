@@ -4,6 +4,6 @@
   <img id="comic" src={{rawData.img}}>
   <img id="next" (click)="nextComic(rawData.num)" alt="next" src="../assets/next-arrow.png">
 </div>
-<div>
-  <a routerLink="/info/{{rawData.num}}">Comic #{{rawData.num}}: info</a>
+<div id="about_comic">
+  <a routerLink="/info/{{rawData.num}}">Comic Info</a>
 </div>

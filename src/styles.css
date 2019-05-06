@@ -5,16 +5,16 @@ h1 {
     font-size: 250%;
   }
   h2, h3 {
-    color: #444;
+    color: rgb(68, 63, 48);
     font-family: 'Times New Roman', Times, serif;
     font-weight: lighter;
   }
   body {
-    background-color: yellow;
+    background-color: rgb(250, 215, 25);
     margin: 2em;
   }
   body, input[type="text"], button {
-    color: #888;
+    color: rgb(136, 136, 136);
     font-family: Cambria, Georgia;
   }
   /* everywhere else */
