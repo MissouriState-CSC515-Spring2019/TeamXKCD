@@ -34,11 +34,11 @@ div {
 }
 
 #prev:hover {
-  filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+  filter: invert(10%) sepia(1%) saturate(10%) hue-rotate(180deg) brightness(1000%) contrast(200%);
 }
 
 #next:hover {
-  filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(100%);
+  filter: invert(10%) sepia(10%) saturate(50%) hue-rotate(180deg) brightness(1000%) contrast(200%);
 }
 
 a {
