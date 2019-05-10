@@ -1,6 +1,6 @@
 # Overview
 
-We will create a single page application that will allow the user to see the current XKCD comic strip, see previous XKCD comic strips and to create permanent links to their favorite comic strip.
+We will create a single page application that will allow the user to see the current and previous XKCD comic strips, as well as I formation about those strips and the author.
 
 ## XkcdProject515
 
