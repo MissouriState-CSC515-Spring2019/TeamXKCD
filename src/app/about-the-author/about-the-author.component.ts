@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RipJSONService } from '../rip-json.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-about-the-author',
@@ -8,11 +9,15 @@ import { RipJSONService } from '../rip-json.service';
 })
 export class AboutTheAuthorComponent implements OnInit {
   public rawData = [];
-  constructor(private apiService: RipJSONService) {}
+  constructor(
+    private apiService: RipJSONService,
+    private location: Location
+    ) {}
 
-  ngOnInit() {
-    // this.apiService.getData()
-    //   .subscribe(data => this.rawData = data);
+  ngOnInit() {}
+  
+  goBack(): void {
+    this.location.back();
   }
 }
 
